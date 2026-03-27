@@ -15,7 +15,7 @@ export function Input({
 }: Props) {
   return (
     <div className="flex flex-col w-full relative">
-      <label htmlFor={name} className="text-xs sm:text-sm md:text-base">
+      <label htmlFor={name} className="text-sm md:text-base">
         {label}
       </label>
       <input
@@ -27,7 +27,7 @@ export function Input({
       />
 
       {error && (
-        <span className="text-red-500 text-xs sm:text-sm mt-2 absolute top-14 sm:top-16 pl-2">
+        <span className="text-red-500 text-xs sm:text-sm mt-1 absolute top-14 sm:top-16 pl-2">
           {error.message}
         </span>
       )}

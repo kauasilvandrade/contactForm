@@ -64,8 +64,8 @@ export function App() {
   }
 
   return (
-    <div className="min-h-screen w-full px-2 sm:px-3 md:px-4 lg:px-6 py-4 sm:py-6 md:py-8 font-sans flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12">
-      <div className="w-full sm:w-80 md:w-72 lg:w-96 bg-violet-600 p-6 sm:p-8 md:p-10 pb-2 rounded-xl flex-shrink-0">
+    <div className="min-h-screen w-full px-4 sm:px-3 md:px-4 lg:px-6 py-4 sm:py-6 md:py-8 font-sans flex flex-col md:flex-row items-center justify-center gap-8 sm:gap-14 md:gap-8 lg:gap-12">
+      <div className="w-full sm:w-xl md:w-lg lg:w-96 bg-violet-600 p-6 sm:p-8 md:p-10 pb-2 rounded-xl">
         <ContactHeader />
 
         <ContactInfo
@@ -88,10 +88,10 @@ export function App() {
       </div>
 
       <form
-        className="w-full sm:w-96 md:w-2xl lg:w-2xl"
+        className="w-full sm:w-xl md:w-2xl lg:w-2xl"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10">
+        <div className="w-full flex flex-col sm:flex-row gap-7 sm:gap-4 mb-8 sm:mb-10">
           <Input
             label="First Name"
             name="firstName"
@@ -108,7 +108,7 @@ export function App() {
           />
         </div>
 
-        <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10">
+        <div className="w-full flex flex-col sm:flex-row gap-7 sm:gap-4 mb-8 sm:mb-10">
           <Input
             label="Name"
             name="name"

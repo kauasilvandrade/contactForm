@@ -7,8 +7,8 @@ type Props = React.ComponentProps<"textarea"> & {
 
 export function Textarea({ label, name, register, error, ...rest }: Props) {
   return (
-    <div className="flex flex-col relative mb-4 sm:mb-6">
-      <label htmlFor={name} className="text-xs sm:text-sm md:text-base">
+    <div className="flex flex-col relative mb-3">
+      <label htmlFor={name} className="text-sm md:text-base">
         {label}
       </label>
       <textarea
