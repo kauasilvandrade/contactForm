@@ -1,14 +1,17 @@
-import { ContactHeader } from "./components/ContactHeader";
-import { ContactInfo } from "./components/ContactInfo";
-
 import LocationIcon from "./../src/assets/locationIcon.png";
 import EmailIcon from "./../src/assets/emailIcon.png";
 import PhoneIcon from "./../src/assets/phoneIcon.png";
 
+import { ContactHeader } from "./components/ContactHeader";
+import { ContactInfo } from "./components/ContactInfo";
+import { Input } from "./components/Input";
+import { Textarea } from "./components/Textarea";
+import { Button } from "./components/Button";
+
 export function App() {
   return (
-    <div className="w-screen h-screen font-sans flex items-center justify-center gap-x-6">
-      <div className="w-2xs bg-violet-600 p-5 pb-2 rounded-xl">
+    <div className="w-screen h-screen px-3 font-sans flex items-center justify-center gap-x-8">
+      <div className="w-md bg-violet-600 p-10 pb-2 rounded-xl">
         <ContactHeader />
 
         <ContactInfo
@@ -30,7 +33,39 @@ export function App() {
         />
       </div>
 
-      <form>FORM</form>
+      <form className="w-2xl">
+        <div className="w-full flex gap-4 mb-7">
+          <Input
+            label="First Name"
+            name="firstName"
+            placeholder="Enter your First Name"
+          />
+          <Input
+            label="Last Name"
+            name="lastname"
+            placeholder="Enter your Last Name"
+          />
+        </div>
+
+        <div className="w-full flex gap-4 mb-7">
+          <Input label="Name" name="name" placeholder="Enter your Name" />
+
+          <Input
+            label="Email"
+            type="email"
+            name="name"
+            placeholder="Enter a valid email address"
+          />
+        </div>
+
+        <Textarea
+          label="Message"
+          name="message"
+          placeholder="Enter your message"
+        />
+
+        <Button />
+      </form>
     </div>
   );
 }
